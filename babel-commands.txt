@@ -1,0 +1,11 @@
+//run file
+npx babel-node <filepath>
+
+//see transpiled file
+npx babel <filepath>
+
+//output transpiled code to file
+npx babel <filepath> --out-file <outputfilepath>
+
+//transpile directory
+npx babel <sourcedir> --out-dir <targetdir> --config-file <.babelrc_filePath>

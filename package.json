@@ -1,0 +1,47 @@
+{
+  "name": "course",
+  "version": "1.0.0",
+  "description": "Showing how to build apps with Node.js",
+  "main": "fibonacci.js",
+  "scripts": {
+    "start": "node hosted-server.js",
+    "say-hello": "node ./hello-world.js",
+    "fib": "node ./fibonacci.js",
+    "both": "node ./hello-world.js && node ./fibonacci.js",
+    "smart-both": "npm run say-hello && npm run fib",
+    "echo-hello": "echo \"Hello Everyone\"",
+    "test": "npx mocha \"src/**/*.test.js\" --recursive --require @babel/register ",
+    "test:watch": "npx mocha \"src/**/*.test.js\" --recursive --require @babel/register --watch",
+    "coverage": "nyc --reporter=lcov --reporter=text npm run test"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "keywords": [
+    "fibonacci"
+  ],
+  "author": "Aritra.Roy",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2",
+    "aguid": "^2.0.0",
+    "express": "^4.18.1",
+    "koa": "^2.13.4",
+    "mongodb": "^4.8.1",
+    "mysql": "^2.18.1",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/node": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/register": "^7.18.9",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.19",
+    "nyc": "^15.1.0",
+    "supertest": "^6.2.4"
+  }
+}
